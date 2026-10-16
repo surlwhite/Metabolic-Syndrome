@@ -1,0 +1,31 @@
+﻿variable,role,description,coding_or_unit,source_column
+MS,Outcome,"Metabolic syndrome, IDF definition for children and adolescents","1 = present, 0 = absent","Derived from waist, sysBP, diaBP, glucose, HDL and TG"
+waist,"Outcome component, not used as a predictor",Waist circumference,cm,허리둘레
+sysBP,"Outcome component, not used as a predictor",Systolic blood pressure,mmHg,"수축기 (2021, 2022); 수축기혈압 (2023, 2024)"
+diaBP,"Outcome component, not used as a predictor",Diastolic blood pressure,mmHg,"이완기 (2021, 2022); 이완기혈압 (2023, 2024)"
+glucose,"Outcome component, not used as a predictor",Fasting plasma glucose,mg/dL,"혈당(식전)(mg/dl) (2021); 혈당식전mgdl (2022); 식전혈당 (2023, 2024)"
+HDL,"Outcome component, not used as a predictor",HDL cholesterol,mg/dL,hdl(mg/dl) (2021); hdlmgdl (2022); 고밀도지단백콜레스테롤_HDL (2023); 고밀도지단백콜레스테롤(HDL) (2024)
+TG,"Outcome component, not used as a predictor",Triglycerides,mg/dL,중성지방(mg/dl) (2021); 중성지방mgdl (2022); 중성지방_TG (2023); 중성지방(TG) (2024)
+sex,Candidate predictor,Sex,"1 = male, 0 = female",성별
+age,Candidate predictor,Age at examination,"Years, (examination date − date of birth) / 365.25","생년월일, 건강검진일"
+global_grade,Candidate predictor,School level,"1 = 4th grade of elementary school, 2 = 1st grade of middle school, 3 = 1st grade of high school","학교급, 학년"
+bmi,Candidate predictor,Body mass index,"kg/m2, weight / (height / 100)2","키, 몸무게"
+chol,Candidate predictor,Total cholesterol,mg/dL,"총콜레스테롤(mg/dl) (2021); 총콜레스테롤mgdl (2022); 총콜레스테롤 (2023, 2024)"
+LDL,Candidate predictor,LDL cholesterol,mg/dL,ldl(mg/dl) (2021); ldlmgdl (2022); 저밀도지단백콜레스테롤_LDL (2023); 저밀도지단백콜레스테롤(LDL) (2024)
+AST,Candidate predictor,Aspartate aminotransferase,U/L,AST(U/L) (2021); astul (2022); 간세포효소_AST (2023); 간세포효소(AST) (2024)
+ALT,Candidate predictor,Alanine aminotransferase,U/L,ALT(U/L) (2021); altul (2022); 간세포효소_ALT (2023); 간세포효소(ALT) (2024)
+sleep,Candidate predictor,Sleep duration category,"1 = 6 hours or less, 2 = more than 6 to 7 hours, 3 = more than 7 to 8 hours, 4 = more than 8 hours",하루수면량
+PA,Candidate predictor,Physical activity,"1 = meets the activity criterion, 0 = does not. Elementary school: exercised vigorously at least three times a week. Middle and high school: exercised vigorously for 30 minutes to 1 hour or more on at least three days a week",주3회이상운동 (elementary school); 하루30분이상운동 (middle and high school)
+EatingIndex,Candidate predictor,Eating habit index,"0 to 24. Eight items each scored 0 to 3; instant noodles, sugary drinks and fast food are reverse-scored. All eight items are required","라면, 음료수, 패스트푸드, 육류, 우유유제품, 과일, 채소(김치제외), 아침식사"
+weight_control_diet,Candidate predictor,Weight-control dieting,"1 = reported, 0 = not reported",다이어트경험_답변2
+weight_control_medication,Candidate predictor,Weight-control medication,"1 = reported, 0 = not reported",다이어트경험_답변3
+weight_control_exercise,Candidate predictor,Weight-control exercise,"1 = reported, 0 = not reported",다이어트경험_답변4
+weight_control_attempt,Candidate predictor,Any weight-control attempt,"1 if any of the three behaviors above was reported, 0 otherwise",Derived
+bully,Candidate predictor,Bullying victimization,"1 = yes, 0 = no","괴롭힘따돌림_초, 괴롭힘따돌림_중고 (2021, 2022); 괴롭힘따돌림 (2023, 2024)"
+runaway,Candidate predictor,Thoughts of running away from home,"1 = yes, 0 = no","가출생각_초, 가출생각_중고 (2021); 가출생각_초, 가출생각중고 (2022); 가출생각 (2023, 2024)"
+want_counseling,Candidate predictor,"Need for counseling, school or home problems","1 = yes, 0 = no","상담희망_초, 상담희망_중고 (2021); 학교문제상담희망_초, 학교문제상담희망_중고 (2022, 2023); 상담희망 (2024)"
+request_counseling,Candidate predictor,"Need for counseling, personal worries","1 = yes, 0 = no","상담요청_초, 상담요청_중고 (2021, 2022); 상담요청 (2023); 고민상담요청 (2024)"
+bmi_z,"Retained in the analysis, not a predictor","BMI z-score, reported in Table 1 but not entered into any model",LMS method applied to the 2017 Korean National Growth Charts for children and adolescents,"Derived from 키, 몸무게, 성별 and age"
+body_image,"Retained in the analysis, not a predictor","Self-perceived body shape, used only in the definition of the analytic cohort",Questionnaire category; not entered into any model,"자아신체상(체형) (2021); 자아신체상체형 (2022, 2023, 2024)"
+internet,"Removed as a variable, not collected consistently",Screen time of two hours or more per day,Removed as a variable: unavailable for 97.0% of middle-school students in 2024,"하루2시간이상게임_초, 하루2시간이상게임_중고 (2021, 2022, 2023); 2시간이상게임 (2024)"
+family_worry,"Removed as a variable, not collected consistently",Concern about family problems,Removed as a variable: unavailable for all elementary-school students,가정문제걱정
